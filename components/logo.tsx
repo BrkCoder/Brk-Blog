@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import logo from '../public/images/logo.jpg'
+import logo from '../public/images/logo.png'
 const Logo = () => {
     return <Image src={logo} width="300px" height="253.13px" />
 }

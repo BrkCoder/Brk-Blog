@@ -3,7 +3,7 @@ import styles from './layout.module.scss'
 import Header from './header'
 
 const name = 'Your Name'
-export const siteTitle = 'Next.js Sample Website'
+export const siteTitle = `Brk's Blog`
 
 export default function Layout({
     children,
