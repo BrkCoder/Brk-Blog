@@ -1,0 +1,15 @@
+@import '../styles/variables.scss';
+
+.header {
+    display: flex;
+    height: $headerHeight;
+    width: $headerWidth;
+    flex-direction: column;
+}
+
+.content {
+    height: calc(100% - $headerHeight);
+    max-height: max-content;
+    min-height: min-content;
+    width: 100%;
+}

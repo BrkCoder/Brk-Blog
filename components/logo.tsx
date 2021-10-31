@@ -1,7 +1,12 @@
 import Image from 'next/image'
 import logo from '../public/images/logo.png'
+import styles from './logo.module.scss'
 const Logo = () => {
-    return <Image src={logo} width="300px" height="253.13px" />
+    return (
+        <div className={styles.logo}>
+            <Image src={logo} layout="responsive" placeholder="blur" />
+        </div>
+    )
 }
 
 export default Logo
