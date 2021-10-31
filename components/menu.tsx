@@ -1,32 +1,32 @@
 import styles from './menu.module.scss'
-
+import Link from 'next/link'
 const Menu = () => {
     return (
         <ul className={styles.menu}>
             <li>
-                <a className={styles.item} href="#">
-                    Home
-                </a>
+                <Link href="/">
+                    <a className={styles.link}>Home</a>
+                </Link>
             </li>
             <li>
-                <a className={styles.item} href="#">
-                    Blog
-                </a>
+                <Link href="/Blog">
+                    <a className={styles.link}>Blog</a>
+                </Link>
             </li>
             <li>
-                <a className={styles.item} href="#">
-                    Categories
-                </a>
+                <Link href="/Categories">
+                    <a className={styles.link}>Categories</a>
+                </Link>
             </li>
             <li>
-                <a className={styles.item} href="#">
-                    Social
-                </a>
+                <Link href="/Social">
+                    <a className={styles.link}>Social</a>
+                </Link>
             </li>
             <li>
-                <a className={styles.item} href="#">
-                    About
-                </a>
+                <Link href="/About">
+                    <a className={styles.link}>About</a>
+                </Link>
             </li>
         </ul>
     )
