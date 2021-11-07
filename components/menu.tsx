@@ -1,33 +1,51 @@
+import React from 'react'
 import styles from './menu.module.scss'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
+
+const Links = [
+    {
+        id: 1,
+        name: 'Home',
+        href: "/"
+    },
+    {
+        id: 2,
+        name: 'Blog',
+        href: "/blog"
+    },
+    {
+        id: 3,
+        name: 'Categories',
+        href: "/categories"
+    },
+    {
+        id: 4,
+        name: 'Social',
+        href: "/social"
+    },
+    {
+        id: 5,
+        name: 'About',
+        href: '/about'
+    }
+]
 const Menu = () => {
+    const router = useRouter();
     return (
         <ul className={styles.menu}>
-            <li>
-                <Link href="/">
-                    <a className={styles.link}>Home</a>
-                </Link>
-            </li>
-            <li>
-                <Link href="/Blog">
-                    <a className={styles.link}>Blog</a>
-                </Link>
-            </li>
-            <li>
-                <Link href="/Categories">
-                    <a className={styles.link}>Categories</a>
-                </Link>
-            </li>
-            <li>
-                <Link href="/Social">
-                    <a className={styles.link}>Social</a>
-                </Link>
-            </li>
-            <li>
-                <Link href="/About">
-                    <a className={styles.link}>About</a>
-                </Link>
-            </li>
+            {
+                Links.map((link) => {
+                    return (
+                        <li key={link.id}>
+                            <Link href={link.href}>
+                                <a className={ styles.link }
+                                >{link.name}</a>
+                            </Link>
+                        </li>
+                    )
+                })
+            }
         </ul>
     )
 }

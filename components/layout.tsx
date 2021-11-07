@@ -1,3 +1,4 @@
+import React from 'react'
 import Head from 'next/head'
 import Header from './header'
 import styles from './layout.module.scss'
@@ -11,7 +12,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <link rel="icon" href="./favicon.png" />
                 <meta name="description" content="Brk's Coding Blog" />
                 <meta name="og:title" content={siteTitle} />
-                {/* <meta name="twitter:card" content="summary_large_image" /> */}
             </Head>
             <div className={styles.header}>
                 <Header />
