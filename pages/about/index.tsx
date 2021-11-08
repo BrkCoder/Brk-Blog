@@ -1,8 +1,8 @@
 import Head from 'next/head'
-import Jackhammer from '../components/jackhammer'
-import Layout, { siteTitle } from '../components/layout'
+import Jackhammer from '../../components/jackhammer'
+import Layout, { siteTitle } from '../../components/layout'
 
-export default function Home() {
+const About = () => {
     return (
         <Layout>
             <Head>
@@ -12,3 +12,5 @@ export default function Home() {
         </Layout>
     )
 }
+
+export default About
