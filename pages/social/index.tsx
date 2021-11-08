@@ -1,15 +1,16 @@
 import Head from 'next/head'
-import Construction from '../../components/construction'
+import Jackhammer from '../../components/jackhammer'
 import Layout, { siteTitle } from '../../components/layout'
+
 const Social = () => {
     return (
         <Layout>
             <Head>
                 <title>{siteTitle}</title>
             </Head>
-            <h1>Social</h1>
+            <Jackhammer />
         </Layout>
     )
 }
 
-export default Social;
+export default Social

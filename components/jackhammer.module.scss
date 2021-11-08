@@ -1,0 +1,161 @@
+.jackhammer {
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#jackhammerSVG {
+    height: 17.1875rem;
+    width: 100%;
+    opacity: 1;
+}
+
+#jackhammerTitle {
+    font-size: 1.75rem;
+    font-weight: normal;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    line-height: 125%;
+}
+
+#jackhammerCountdown {
+    color: #ffffff;
+    fill: #ffffff;
+}
+
+.jhcount {
+    font-size: 4rem;
+}
+
+.jhtime {
+    fill: #ffffff;
+    text-anchor: middle;
+}
+
+#svgCountdown {
+    overflow: visible;
+}
+
+.skinColor {
+    fill: #fdd1a2;
+}
+
+.vestColor {
+    fill: #bcc935;
+}
+
+.vestStipeColor {
+    fill: #ffffff;
+}
+
+.armHairColor {
+    stroke: #d6a070;
+}
+
+.chestColor {
+    fill: #e8b276;
+}
+
+.chestHairColor {
+    stroke: #c99669;
+}
+
+.jackhammerShaftColor {
+    fill: #c1c1c0;
+}
+
+.jackhammerTipColor {
+    fill: #999999;
+}
+
+.jackhammerMainColor {
+    fill: #faa31c;
+}
+
+.jackhammerHandleColorLt {
+    fill: #333333;
+}
+
+.jackhammerHandleColorDk {
+    fill: #262626;
+}
+
+.hatColorLt {
+    fill: #fabb48;
+}
+
+.hatColorDk {
+    fill: #faa31c;
+}
+
+.pantsColor {
+    fill: #566275;
+}
+
+.feetColor {
+    fill: #333333;
+}
+
+.shadowColor {
+    fill: #364545;
+    opacity: 0;
+}
+
+.maskColor {
+    fill: #ffffff;
+}
+
+.maskVentColor {
+    fill: #d8d8d8;
+}
+
+#jackhammerCube1 {
+    opacity: 1;
+}
+
+#jackhammerCube2 {
+    opacity: 1;
+}
+
+#jackhammerCube3 {
+    opacity: 1;
+}
+
+#jackhammerCube4 {
+    opacity: 1;
+}
+
+#jackhammerCube1 .boxSide {
+    fill: #c3802a;
+}
+
+#jackhammerCube1 .boxTop {
+    fill: #f9a31c;
+}
+
+#jackhammerCube2 .boxSide {
+    fill: #b98b33;
+}
+
+#jackhammerCube2 .boxTop {
+    fill: #fabb48;
+}
+
+#jackhammerCube3 .boxSide {
+    fill: #97a339;
+}
+
+#jackhammerCube3 .boxTop {
+    fill: #bcc935;
+}
+
+#jackhammerCube4 .boxSide {
+    fill: #475261;
+}
+
+#jackhammerCube4 .boxTop {
+    fill: #556276;
+}

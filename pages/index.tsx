@@ -1,13 +1,14 @@
 import Head from 'next/head'
-import Construction from '../components/construction'
+import Jackhammer from '../components/jackhammer'
 import Layout, { siteTitle } from '../components/layout'
+
 export default function Home() {
     return (
         <Layout>
             <Head>
                 <title>{siteTitle}</title>
             </Head>
-            <Construction />
+            <Jackhammer />
         </Layout>
     )
 }
