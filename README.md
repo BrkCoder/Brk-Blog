@@ -1,7 +1,6 @@
 
 ![alt text](https://github.com/BrkCoder/Brk-Blog/blob/main/public/images/logo.svg?raw=true)
 
-#Brk's Blog
 
 ## Table of contents
 * [General info](#general-info)
@@ -9,7 +8,7 @@
 * [Setup](#setup)
 
 ## General info
-This project is a simple personal blog.
+This project is a simple personal blog, you can visit the live site [here](https://www.brkblog.com)
 
 ## Technologies
 Project is created with:
