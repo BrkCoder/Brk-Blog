@@ -56,6 +56,7 @@ body {
 div#__next {
   display: flex;
   flex-flow: column nowrap;
+  row-gap: 2rem;
   height: 100%;
   width: 100%;
 }
