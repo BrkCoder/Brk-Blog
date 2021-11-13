@@ -5,19 +5,19 @@
     list-style: none;
     display: flex;
     flex-flow: row wrap;
-    column-gap: 2rem;
-    max-width: 46rem;
+    column-gap: 3rem;
+    max-width: 100%;
     padding: 0;
     margin: 0;
     .link,
     .active {
-        font-size: 2rem;
+        font-size: 4rem;
         cursor: pointer;
         display: inline-block;
         position: relative;
         color: #fff;
+        text-decoration: none;
         transition: all 0.5s ease;
-
         &:after {
             content: '';
             position: absolute;
