@@ -1,15 +1,32 @@
 .jackhammer {
-    text-align: center;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-rows: min-content min-content min-content;
+    align-content: center;
+    justify-items: center;
     height: 100%;
 }
 
+.jackhammerTitle{
+    font-size: 2rem;
+    min-width: 0;
+    min-height: 0;
+}
+
+.svgHolder{
+    min-width: 20rem;
+    max-width: max-content;
+}
+
+#jackhammerCountdown {
+    color: #ffffff;
+    fill: #ffffff;
+    min-width: 30rem;
+    max-width: max-content;
+}
+
 #jackhammerSVG {
-    height: 17.1875rem;
-    width: 100%;
+    min-width: 0;
+    min-height: 0;
     opacity: 1;
 }
 
@@ -21,19 +38,44 @@
     line-height: 125%;
 }
 
-#jackhammerCountdown {
-    color: #ffffff;
-    fill: #ffffff;
-}
-
 .jhcount {
-    font-size: 4rem;
+    font-size: 3rem;
+    min-width: 0;
+    min-height: 0;
+
+    @media (min-width: 0px) {
+        font-size: 5rem;
+    }
+
+    @media (min-width: 640px) {
+        font-size: 4rem;
+    }
+
+    @media (min-width: 1280px) {
+        font-size: 3rem;
+    }
 }
 
 .jhtime {
     fill: #ffffff;
     text-anchor: middle;
+    font-size: 1.5rem;
+    min-width: 0;
+    min-height: 0;
+
+    @media (min-width: 0px) {
+        font-size: 3.5rem;
+    }
+
+    @media (min-width: 640px) {
+        font-size: 2.5rem;
+    }
+
+    @media (min-width: 1280px) {
+        font-size: 1.5rem;
+    }
 }
+
 
 #svgCountdown {
     overflow: visible;
