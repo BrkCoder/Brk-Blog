@@ -8,4 +8,7 @@
 .content {
     flex: 3 3 0;
     max-width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    row-gap: 2rem;
 }

@@ -1,0 +1,31 @@
+.headline{
+ display: flex;
+ flex-flow: row nowrap;
+ justify-content: center;
+}
+
+.title {
+  font-size: 4rem;
+}
+
+.postContainer{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-areas: ". postList .";
+}
+
+.postList{
+  grid-area: postList;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-content: center;
+  gap: 2rem;
+}
+
+.post{
+  height: 280px;
+  flex-basis: unset;
+  flex-grow: unset;
+  border: 1px solid rebeccapurple;
+}
