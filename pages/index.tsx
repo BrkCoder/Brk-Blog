@@ -22,12 +22,12 @@ export default function Home() {
                 trigger: ref,
                 start: "top bottom",
                 end: "top bottom",
-                markers: true,
                 animation: tl,
             });
             timelines.push(tl)
         })
-
+        const [firstTimeLine] = timelines;
+        firstTimeLine.play();
         return () => {
             timelines.forEach(tl => tl.kill())
         }
