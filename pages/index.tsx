@@ -20,9 +20,8 @@ export default function Home() {
             tl.to(ref, {y : 0 , opacity: 1, duration: 0.4})
             ScrollTrigger.create({ // first circle animation
                 trigger: ref,
-                start: "top bottom",
+                start: "top center",
                 animation: tl,
-                immediateRender: true
             });
             timelines.push(tl)
         })
