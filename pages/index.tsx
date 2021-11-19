@@ -22,6 +22,7 @@ export default function Home() {
                 start: "top bottom",
                 end: "top bottom",
                 animation: tl,
+                invalidateOnRefresh: true
             });
             timelines.push(tl)
         })
