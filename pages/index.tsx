@@ -26,8 +26,12 @@ export default function Home() {
             });
             timelines.push(tl)
         })
-        const [firstTimeLine] = timelines;
-        firstTimeLine.play();
+        ScrollTrigger.matchMedia({
+            "(min-width: 0px) and (max-width: 640px)": () => {
+                const [firstTimeLine] = timelines;
+                firstTimeLine.play();
+            }
+        })
         return () => {
             timelines.forEach(tl => tl.kill())
         }
