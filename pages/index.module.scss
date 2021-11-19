@@ -10,22 +10,31 @@
 
 .postContainer{
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 3fr 1fr;
   grid-template-areas: ". postList .";
+  padding: 4rem;
 }
 
 .postList{
   grid-area: postList;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
   justify-items: center;
   align-content: center;
-  gap: 2rem;
+  gap: 4rem;
 }
 
+
 .post{
-  height: 280px;
-  flex-basis: unset;
-  flex-grow: unset;
-  border: 1px solid rebeccapurple;
+  font-size: 2rem;
+  font-weight: 400;
+  height: 40rem;
+  padding: 1.5rem;
+  border: 1px solid #000;
+  box-shadow: 0 0 #0000,0 0 #0000, 0 10px 15px -3px rgba(0,0,0,0.1),0 4px 6px -2px rgba(0,0,0,0.05);
+  cursor: pointer;
+  &:hover{
+    transform: scaleX(1.05) scaleY(1.05);
+    transition: all 0.15s cubic-bezier(.4,0,.2,1);
+  }
 }

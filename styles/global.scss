@@ -4,8 +4,35 @@
 
 //noinspection ALL
 @font-face {
-  font-family: "Passion One";
-  src: url('/fonts/PassionOne/PassionOne-regular.ttf');
+  font-family: "Indian Type Foundry";
+  src: url('/fonts/IndianTypeFoundry/IndianTypeFoundry-AkhandSoft-Extralight.otf');
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+}
+
+//noinspection ALL
+@font-face {
+  font-family: "Indian Type Foundry";
+  src: url('/fonts/IndianTypeFoundry/IndianTypeFoundry-AkhandSoft-Semilight.otf');
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+}
+
+//noinspection ALL
+@font-face {
+  font-family: "Indian Type Foundry";
+  src: url('/fonts/IndianTypeFoundry/IndianTypeFoundry-AkhandSoft-Light.otf');
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
+//noinspection ALL
+@font-face {
+  font-family: "Indian Type Foundry";
+  src: url('/fonts/IndianTypeFoundry/IndianTypeFoundry-AkhandSoft-Regular.otf');
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -13,8 +40,17 @@
 
 //noinspection ALL
 @font-face {
-  font-family: "Passion One";
-  src: url('/fonts/PassionOne/PassionOne-Bold.ttf');
+  font-family: "Indian Type Foundry";
+  src: url('/fonts/IndianTypeFoundry/IndianTypeFoundry-AkhandSoft-Semibold.otf');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+//noinspection ALL
+@font-face {
+  font-family: "Indian Type Foundry";
+  src: url('/fonts/IndianTypeFoundry/IndianTypeFoundry-AkhandSoft-Bold.otf');
   font-style: normal;
   font-weight: 700;
   font-display: swap;
@@ -22,8 +58,17 @@
 
 //noinspection ALL
 @font-face {
-  font-family: "Passion One";
-  src: url('/fonts/PassionOne/PassionOne-Black.ttf');
+  font-family: "Indian Type Foundry";
+  src: url('/fonts/IndianTypeFoundry/IndianTypeFoundry-AkhandSoft-Extrabold.otf');
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+}
+
+//noinspection ALL
+@font-face {
+  font-family: "Indian Type Foundry";
+  src: url('/fonts/IndianTypeFoundry/IndianTypeFoundry-AkhandSoft-Black.otf');
   font-style: normal;
   font-weight: 900;
   font-display: swap;
@@ -80,8 +125,9 @@ html{
 }
 
 body {
-  font-family: "Passion One", sans-serif;
-  background-color: $color-1;
+  font-family: "Indian Type Foundry", sans-serif;
+  font-weight: 400;
+  background-color: #ffffff;
   height: 100%;
   width: 100%;
 }
@@ -92,7 +138,7 @@ body {
 
 div#__next {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 3fr;
   height: 100%;
   width: 100%;
   row-gap: 5rem;

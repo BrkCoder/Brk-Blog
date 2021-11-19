@@ -8,7 +8,7 @@ const Blog = () => {
             <Head>
                 <title>{siteTitle}</title>
             </Head>
-            <Jackhammer />
+            {/*<Jackhammer />*/}
         </Layout>
     )
 }

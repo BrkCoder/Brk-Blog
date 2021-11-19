@@ -8,7 +8,7 @@ const Categories = () => {
             <Head>
                 <title>{siteTitle}</title>
             </Head>
-            <Jackhammer />
+            {/*<Jackhammer />*/}
         </Layout>
     )
 }

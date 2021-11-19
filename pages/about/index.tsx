@@ -8,7 +8,7 @@ const About = () => {
             <Head>
                 <title>{siteTitle}</title>
             </Head>
-            <Jackhammer />
+            {/*<Jackhammer />*/}
         </Layout>
     )
 }
