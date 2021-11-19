@@ -15,14 +15,13 @@ export default function Home() {
         const timelines = [];
         postsRef.current.forEach(ref => {
             const tl = gsap.timeline();
+            gsap.set(ref, { y: "30rem", opacity: 0})
             tl.from(ref, { y: "30rem", opacity: 0});
-            tl.to(ref, {y : 0 , opacity: 1, delay: 0.1})
+            tl.to(ref, {y : 0 , opacity: 1, duration: 0.4})
             ScrollTrigger.create({ // first circle animation
                 trigger: ref,
                 start: "top bottom",
-                end: "top bottom",
                 animation: tl,
-                invalidateOnRefresh: true
             });
             timelines.push(tl)
         })
