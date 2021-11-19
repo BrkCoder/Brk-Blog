@@ -15,8 +15,8 @@ export default function Home() {
         const timelines = [];
         postsRef.current.forEach(ref => {
             const tl = gsap.timeline();
-            tl.from(ref, { x: "30rem", opacity: 0, display: "none"});
-            tl.to(ref, {x : 0 , opacity: 1, delay: 0.1, display: "inline-block"})
+            tl.from(ref, { y: "30rem", opacity: 0});
+            tl.to(ref, {y : 0 , opacity: 1, delay: 0.1})
             ScrollTrigger.create({ // first circle animation
                 trigger: ref,
                 start: "top bottom",
