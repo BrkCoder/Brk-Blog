@@ -22,6 +22,7 @@ export default function Home() {
                 trigger: ref,
                 start: "top bottom",
                 animation: tl,
+                immediateRender: true
             });
             timelines.push(tl)
         })
