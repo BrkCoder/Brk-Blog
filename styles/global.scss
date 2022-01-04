@@ -1,175 +1,75 @@
-@import './variables.scss';
+@import 'variables';
 
-/*** custom font faces ***/
-
-//noinspection ALL
 @font-face {
-  font-family: "Indian Type Foundry";
-  src: url('/fonts/IndianTypeFoundry/IndianTypeFoundry-AkhandSoft-Extralight.otf');
-  font-style: normal;
-  font-weight: 100;
-  font-display: swap;
-}
-
-//noinspection ALL
-@font-face {
-  font-family: "Indian Type Foundry";
-  src: url('/fonts/IndianTypeFoundry/IndianTypeFoundry-AkhandSoft-Semilight.otf');
-  font-style: normal;
-  font-weight: 200;
-  font-display: swap;
-}
-
-//noinspection ALL
-@font-face {
-  font-family: "Indian Type Foundry";
-  src: url('/fonts/IndianTypeFoundry/IndianTypeFoundry-AkhandSoft-Light.otf');
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-}
-
-//noinspection ALL
-@font-face {
-  font-family: "Indian Type Foundry";
-  src: url('/fonts/IndianTypeFoundry/IndianTypeFoundry-AkhandSoft-Regular.otf');
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-}
-
-//noinspection ALL
-@font-face {
-  font-family: "Indian Type Foundry";
-  src: url('/fonts/IndianTypeFoundry/IndianTypeFoundry-AkhandSoft-Semibold.otf');
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-}
-
-//noinspection ALL
-@font-face {
-  font-family: "Indian Type Foundry";
-  src: url('/fonts/IndianTypeFoundry/IndianTypeFoundry-AkhandSoft-Bold.otf');
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-}
-
-//noinspection ALL
-@font-face {
-  font-family: "Indian Type Foundry";
-  src: url('/fonts/IndianTypeFoundry/IndianTypeFoundry-AkhandSoft-Extrabold.otf');
-  font-style: normal;
-  font-weight: 800;
-  font-display: swap;
-}
-
-//noinspection ALL
-@font-face {
-  font-family: "Indian Type Foundry";
-  src: url('/fonts/IndianTypeFoundry/IndianTypeFoundry-AkhandSoft-Black.otf');
-  font-style: normal;
-  font-weight: 900;
-  font-display: swap;
-}
-
-
-/** Yahoo Reset CSS **/
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
-  padding: 0;
-  margin: 0;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-fieldset, img {
-  border: 0;
-}
-
-address, caption, cite, code, dfn, em, strong, th, var {
+  font-family: Oxygen;
+  src: url("/fonts/Oxygen/Oxygen-Regular.ttf") format("truetype");
+  font-stretch: normal;
   font-weight: normal;
-  font-style: normal;
+  font-style: normal
 }
 
-ol, ul {
-  list-style: none;
-}
-
-caption, th {
-  text-align: left;
-}
-
-h1, h2, h3, h4, h5, h6 {
+@font-face {
+  font-family: "Oxygen light";
+  src: url("/fonts/Oxygen/Oxygen-Light.ttf") format("truetype");
+  font-stretch: normal;
   font-weight: normal;
-  font-size: 100%;
+  font-style: normal
 }
 
-q:before, q:after {
-  content: '';
+@font-face {
+  font-family: "Oxygen bold";
+  src: url("/fonts/Oxygen/Oxygen-Bold.ttf") format("truetype");
+  font-stretch: normal;
+  font-weight: normal;
+  font-style: normal
 }
 
-abbr, acronym {
-  border: 0;
+@font-face {
+  font-family: "Oxygen mono";
+  src: url("/fonts/Oxygen_Mono/OxygenMono-Regular.ttf") format("truetype");
+  font-stretch: normal;
+  font-weight: normal;
+  font-style: normal
 }
 
-/** Other Global CSS **/
-
-html{
+html {
   box-sizing: border-box;
-  height: 100%;
-  width: 100%;
 }
 
-body {
-  font-family: "Indian Type Foundry", sans-serif;
-  font-weight: 400;
-  background-color: #ffffff;
-  height: 100%;
-  width: 100%;
-}
-
-*, *:before, *:after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
-div#__next {
-  display: grid;
-  grid-template-rows: 1fr 3fr;
-  height: 100%;
-  width: 100%;
-  row-gap: 5rem;
+
+/* generic styles for the page */
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--sans);
+  background-color: var(--black);
+  color: var(--white);
+  font-size: var(--font-size);
 }
 
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+a {
+  margin-left: 0.5rem;
+  color: var(--magenta);
+}
+
+a:hover {
+  color: var(--hotmag);
+  text-decoration: none;
+}
 
 img {
-  max-height: 100%;
-  max-width: 100%;
+  width: 100%;
 }
-
-/**
-* [TODO]: add mobile first approach instead of desktop approach.
-**/
-
-
-@media (min-width: 0px) {
-  :root{
-    font-size: 6px;
-  }
-}
-
-@media (min-width: 640px) {
-  :root{
-    font-size: 8px;
-  }
-}
-
-@media (min-width: 1280px) {
-  :root{
-    font-size: 10px;
-  }
-}
-
