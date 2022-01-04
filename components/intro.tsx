@@ -3,7 +3,7 @@ import styles from './intro.module.scss'
 
 const Intro = () => {
     return (
-        <section className={styles.intro}>
+        <section id="intro" className={styles.intro}>
             <p className={styles.name}>Hi, my name is <span>Barak Inbal.</span></p>
             <h2>I develop the front end of websites.</h2>
             <p>

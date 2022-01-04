@@ -7,6 +7,8 @@ import Navigation from '../components/navigation'
 import Gradient from '../components/gradient'
 import Intro from '../components/intro'
 import Projects from '../components/projects'
+import Contact from '../components/contact'
+import Footer from '../components/footer'
 
 config.autoAddCss = false
 
@@ -20,8 +22,11 @@ const Home: NextPage = () => {
             <Navigation />
             <Intro />
             <Gradient />
-            <Projects/>
+            <Projects />
             <Gradient />
+            <Contact />
+            <Gradient />
+            <Footer />
         </Layout>
     )
 }

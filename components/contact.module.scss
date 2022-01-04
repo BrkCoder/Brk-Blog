@@ -1,0 +1,24 @@
+.sectionPlum {
+  background-color: var(--plum);
+}
+
+
+.contact {
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 4rem 0;
+
+  p:last-child {
+    margin-top: 3rem;
+  }
+}
+
+.button {
+  background-color: var(--magenta);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: var(--mono);
+}

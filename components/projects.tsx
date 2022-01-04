@@ -3,7 +3,7 @@ import styles from './projects.module.scss'
 
 const Projects = () => {
     return (
-        <div className={styles.sectionBlue}>
+        <div id="projects" className={styles.sectionBlue}>
             <section className={styles.projects}>
                 <h2>Projects I'm proud of</h2>
                 <article>
