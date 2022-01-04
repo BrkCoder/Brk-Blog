@@ -15,14 +15,14 @@ export interface LinkProps {
 export const Links: LinkProps[] = [
     {
         label: identity?.name,
-        url: '#',
+        url: '/',
         icons: ['fas', 'code'],
         ariaHidden: true,
         headline: true
     },
     {
         label: 'Projects',
-        url: '#'
+        url: '/#projects'
     },
     {
         label: 'About',
@@ -30,11 +30,11 @@ export const Links: LinkProps[] = [
     },
     {
         label: 'Contact',
-        url: '#'
+        url: '/#contact'
     },
     {
         label: 'LinkedIn',
-        url: '#',
+        url: 'https://www.linkedin.com/in/bari-barak-inbal-09205556',
         icons: ['fab', 'linkedin'],
         target: '_blank',
         ariaHidden: true,
@@ -42,7 +42,7 @@ export const Links: LinkProps[] = [
     },
     {
         label: 'Github',
-        url: '#',
+        url: 'https://github.com/BrkCoder',
         icons: ['fab' ,'github'],
         target: '_blank',
         ariaHidden: true,
@@ -50,7 +50,7 @@ export const Links: LinkProps[] = [
     },
     {
         label: 'Resume',
-        url: '#',
+        url: '/',
         target: '_blank',
         button: true
     }
