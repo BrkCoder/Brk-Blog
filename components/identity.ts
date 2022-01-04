@@ -1,5 +1,6 @@
 export const identity = {
     name: 'Barak Inbal',
     age: '35',
-    gender: 'male'
+    gender: 'male',
+    profession: 'Developer'
 }

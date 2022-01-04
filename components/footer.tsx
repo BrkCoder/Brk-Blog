@@ -1,11 +1,12 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import styles from './footer.module.scss'
+import { identity } from './identity'
 
 const Footer = () => {
     return (
         <footer className={styles.footer}>
-            <h2>Barak Inbal &middot; Developer</h2>
+            <h2>{identity.name} &middot; {identity.profession}</h2>
             <ul>
                 <li>
                     <a href="https://www.linkedin.com/in/bari-barak-inbal-09205556" target="_blank">
@@ -27,7 +28,7 @@ const Footer = () => {
                     </a>
                 </li>
             </ul>
-            <p><small>&copy; 2021 Barak Inbal. All rights reserved.</small></p>
+            <p><small>&copy; 2021 {identity.name}. All rights reserved.</small></p>
         </footer>
     )
 }
