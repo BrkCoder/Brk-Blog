@@ -1,14 +1,29 @@
+import type { NextPage } from 'next'
 import Head from 'next/head'
-import Jackhammer from '../components/jackhammer'
-import Layout, { siteTitle } from '../components/layout'
+import { config, dom } from '@fortawesome/fontawesome-svg-core'
 
-export default function Home() {
+import Layout, { siteTitle } from '../components/layout'
+import Navigation from '../components/navigation'
+import Gradient from '../components/gradient'
+import Intro from '../components/intro'
+import Projects from '../components/projects'
+
+config.autoAddCss = false
+
+const Home: NextPage = () => {
     return (
         <Layout>
             <Head>
+                <style>{dom.css()}</style>
                 <title>{siteTitle}</title>
             </Head>
-            <Jackhammer />
+            <Navigation />
+            <Intro />
+            <Gradient />
+            <Projects/>
+            <Gradient />
         </Layout>
     )
 }
+
+export default Home
